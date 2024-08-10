@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-body: #36b661;
+  --bg-links:  #f8faf9;
+  --bg-main: #eceaea;
+  --font-color: #303131;
+  --bd-input: #03761e;
+  --bg-input-list: #8cf8a7;
+}
+
+body {
+  background-color: var(--bg-body);
+  font-size: 1.6rem;
+  font-family: "Nunito", sans-serif;
+}
+
+#logo {
+  width: 4rem;
+  margin: 3rem 0 3rem 3rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 3rem;
+}
+
+/* Home page */
+
+#inertial-navigation {
+  padding: 5rem;
+  background-color: var(--bg-main);
+  align-items: center;
+  border-radius: 2rem 2rem 0 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#inertial-navigation a {
+  width: 100%;
+  height: 12rem;
+  color: var(--font-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: 0;
+  background-color: var(--bg-links);
+  margin-bottom: 3rem;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: 5px 5px rgb(215, 215, 215);
+
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#inertial-navigation a img {
+  width: 4rem;
+}
+
+
+/* Clients page list */
+
+#client-search {
+  background-color: var(--bg-main);
+  padding: 3rem 2rem 5rem;
+  text-align: center;
+  border-radius: 3rem 3rem 0 0;
+}
+
+#client-search input {
+  width: 100%;
+  height: 4rem;
+  font-family: "Nunito";
+  outline: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--font-color);
+  padding: 1rem;
+  margin-bottom: 3rem;
+  background-color: var(--bg-input-list);
+  border-radius: 1rem;
+  border: 0;
+}
+
+#client-search input::placeholder {
+  color: var(--font-color);
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#ul-wrapper {
+  padding: 3rem 0;
+  border-radius: 1rem;
+  background-color: var(--bg-input-list);
+}
+
+#ul-wrapper ul {
+  text-align: left;
+  list-style: none;
+  padding: 0 2rem;
+}
+
+#ul-wrapper ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: .5px solid #4f4f4f3e;
+}
+
+#ul-wrapper ul li button {
+  width: 3rem;
+  height: 2rem;
+  padding: .5rem;
+  border: 0;
+  border-radius: .5rem;
+  background: none;
+  background-image: url("./assets/arrow.png");
+  background-repeat: no-repeat;
+  background-position: cover;
+}

@@ -1,27 +1,28 @@
 <main>
-
-  <form id="entry-register">
-    <fieldset>
-      <div id="fieldset-wrapper">
-        <legend>Nova Entrada</legend>
-
-        <div id="input-wrapper">
-          <label for="entry description">Descrição</label>
-          <input type="text" id="entry description">
+  <div id="new-entry">
+    <form id="entry-register">
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend class="legends" >Nova Entrada</legend>
+  
+          <div class="input-wrapper">
+            <label class="labels" for="entry description">Descrição</label>
+            <input class="inputs" type="text" id="entry description">
+          </div>
+  
+          <div class="input-wrapper">
+            <label class="labels" for="entry value">Valor</label>
+            <input class="inputs" type="number" id="entry value">
+          </div>
         </div>
-
-        <div id="input-wrapper">
-          <label for="entry value">Valor</label>
-          <input type="number" id="entry value">
-        </div>
-      </div>
-    </fieldset>
-  </form>
+      </fieldset>
+    </form>
+    <div class="box-button">
+      <button class="buttons" 
+      form="client-register"
+      type="submit">
+        Registar entrada
+      </button>
+    </div>
+  </div>
 </main>
-<footer>
-  <button 
-  form="client-register"
-  type="submit">
-    Registar entrada
-  </button>
-</footer>

@@ -48,6 +48,7 @@ header {
 main {
   width: 100%;
   height: 100%;
+  padding: 2rem 0 0;
   display: flex;
   align-items: center;
 }
@@ -207,7 +208,7 @@ footer {
   border-bottom: .5px solid #4f4f4f3e;
 }
 
-#ul-wrapper ul li button {
+#ul-wrapper ul li a {
   width: 3rem;
   height: 2rem;
   padding: .5rem;
@@ -266,6 +267,72 @@ footer {
   width: 100%;
 }
 
+/* client-account */
+
+#client-account {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#client-account h1 {
+  text-align: center;
+}
+
+#client-account table {
+  text-align: center;
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+
+#client-account table thead tr th{
+  padding: 1rem;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#client-account table thead tr th:nth-child(-n+2) {
+  border-right: 2px solid rgb(0, 0, 0);
+}
+
+#client-account table tbody tr td{
+  padding: 1px;
+}
+
+#client-account table tbody tr:nth-child(odd)  td {
+  background-color: rgb(197, 197, 197);
+}
+
+#client-account table tbody tr:last-child td {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#client-account table tfoot tr th {
+  border-right: 2px solid rgb(0, 0, 0);
+}
+
+#client-account table tfoot tr th, #client-account table tfoot tr td {
+  padding: 3px;
+}
+
+#client-account table tfoot tr td {
+  font-weight: bold;
+}
+#client-account div {
+  display: flex;
+  justify-content:center;
+  gap: 2rem;
+}
+
+#client-account button {
+  width: 15rem;
+  height: 5rem;
+  font-size: 1.4rem;
+}
+
 /* Responsive */
 
 @media (min-width: 768px) {
@@ -273,6 +340,14 @@ footer {
   #inertial-navigation, #client-search, #new-client, #new-entry {
     width: 70%;
     margin:  0 auto;
+  }
+
+  #client-account div {
+    gap: 4rem;
+  }
+
+  #client-account {
+    width: 70%;
   }
 }
 
@@ -289,7 +364,6 @@ footer {
   
   #inertial-navigation a {
     width: 50%;
-    height: 8rem;
   }
   
   .input-wrapper {
@@ -305,5 +379,9 @@ footer {
     width: 40%;
     height: 3.5rem;
     font-size: 1.6rem;
+  }
+
+  #client-account button{
+    width: 20rem;
   }
 }

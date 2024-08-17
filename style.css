@@ -14,6 +14,8 @@
   --bg-input-list: #8cf8a7;
   --bg-button: #004a12;
   --color-span: #808080;
+  --bd-table: #000000;
+  --bg-td: rgb(197, 197, 197);
 }
 
 body {
@@ -88,6 +90,7 @@ main {
 
 .buttons {
   width: 70%;
+  height: 3.5rem;
   font-size: 1.8rem;
   font-weight: bold;
   margin-top: 1rem;
@@ -286,16 +289,16 @@ footer {
 #client-account table {
   text-align: center;
   border-collapse: collapse;
-  border: 2px solid black;
+  border: 2px solid var(--bd-table);
 }
 
 #client-account table thead tr th{
   padding: 1rem;
-  border-bottom: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid var(--bd-table);
 }
 
 #client-account table thead tr th:nth-child(-n+2) {
-  border-right: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid var(--bd-table);
 }
 
 #client-account table tbody tr td{
@@ -303,15 +306,15 @@ footer {
 }
 
 #client-account table tbody tr:nth-child(odd)  td {
-  background-color: rgb(197, 197, 197);
+  background-color:var(--bg-td);
 }
 
 #client-account table tbody tr:last-child td {
-  border-bottom: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid var(--bd-table);
 }
 
 #client-account table tfoot tr th {
-  border-right: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid var(--bd-table)
 }
 
 #client-account table tfoot tr th, #client-account table tfoot tr td {
@@ -327,10 +330,14 @@ footer {
   gap: 2rem;
 }
 
-#client-account button {
+#client-account a {
   width: 15rem;
-  height: 5rem;
   font-size: 1.4rem;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Responsive */
@@ -341,14 +348,15 @@ footer {
     width: 70%;
     margin:  0 auto;
   }
+  
+  #client-account {
+    width: 70%;
+  }
 
   #client-account div {
     gap: 4rem;
   }
 
-  #client-account {
-    width: 70%;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -377,11 +385,11 @@ footer {
 
   .buttons {
     width: 40%;
-    height: 3.5rem;
+    height: 5rem;
     font-size: 1.6rem;
   }
 
-  #client-account button{
+  #client-account a{
     width: 20rem;
   }
 }
